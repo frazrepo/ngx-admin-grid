@@ -13,3 +13,30 @@
 	>
 	</ag-grid-angular>
 </div>
+
+<div class="separator">
+</div>
+<!-- Primeng table -->
+<div class="row">
+  <nb-card>
+    <nb-card-body>Primeng Table integration demo</nb-card-body>
+  </nb-card>
+</div>
+<div class="row">
+<p-table [value]="data">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Price</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-row>
+        <tr>
+            <td>{{row.make}}</td>
+            <td>{{row.model}}</td>
+            <td>{{row.price}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>
